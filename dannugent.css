@@ -1,0 +1,18 @@
+@font-face
+{
+  font-family: hvd_edding;
+  src: url(assets/hvd_edding.otf);
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+h1
+{
+  color: black;
+  font-family: hvd_edding;
+  font-size: 75px;
+}
