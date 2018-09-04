@@ -13,27 +13,45 @@
 header
 {
   border-bottom: 0.2px solid black;
-  padding: 5px 0px 5px 0px;
+  text-align: center;
+  height: 150px;
 }
 
 h1
 {
   color: #800000;
   font-family: hvd_edding;
-  font-size: 40px;
-  display: inline;
-  margin-left: 10px;
+  font-size: 50px;
+  margin: auto;
+  padding-top: 15px;
 }
 
-ul
+.socialMedia ul
 {
-  display:inline;
+  display: inline;
   list-style-type: none;
   float: right;
-  padding-right: 15px;
+  padding-right: 150px;
   margin-top: 5px;
+
 }
-ul li {
+.socialMedia ul li
+{
   display: inline-block;
-  padding-left: 35px;
+  padding-left: 200px;
+}
+
+.nav ul
+{
+  display: inline;
+  list-style-type: none;
+  float: left;
+  margin-top: 5px;
+
+}
+.nav ul li
+{
+  display: inline-block;
+  padding-left: 100px;
+  font-size: 18px;
 }
