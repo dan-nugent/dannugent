@@ -12,12 +12,28 @@
 
 header
 {
-  border-bottom: 3px solid #800000;
+  border-bottom: 0.2px solid black;
+  padding: 5px 0px 5px 0px;
 }
+
 h1
 {
-  color: black;
+  color: #800000;
   font-family: hvd_edding;
-  font-size: 60px;
-  margin: 15px 0px 15px 15px;
+  font-size: 30px;
+  display: inline;
+  margin-left: 10px;
+}
+
+ul
+{
+  display:inline;
+  list-style-type: none;
+  float: right;
+  padding-right: 10px;
+  margin-top: 5px;
+}
+ul li {
+  display: inline-block;
+  padding-left: 25px;
 }
