@@ -19,7 +19,7 @@ html,body
 
 .nav
 {
-  background-color: #000000;
+  background-color:  #1a1a1a;
   height: 100%;
   width: 5%;
   display: inline-block;
@@ -28,19 +28,33 @@ html,body
 .nav #mainNav
 {
   position: fixed;
-  margin-top: 0%;
-  margin-left: 1.75%;
+  margin-left: 1.65%;
   list-style: none;
 }
 
 .nav #mainNav li
 {
-  line-height: 125px;
+  line-height: 100px;
+}
+
+.nav #mainNav li a i
+{
+  font-size: 30px;
+  color: #ffffff;
+}
+
+.nav #mainNav li a i:hover
+{
+  transition: 0.5s;
+  color: #800000;
+  font-size: 40px;
+  margin-left: -5px;
+  margin-top: -5px;
 }
 
 .nav #socialMediaNav
 {
-  margin-top: 35%;
+  margin-top: 40%;
   margin-left: 1.75%;
   position: fixed;
   list-style: none;
@@ -48,7 +62,19 @@ html,body
 
 .nav #socialMediaNav li
 {
-  line-height: 75px;
+  line-height: 60px;
+}
+
+#socialMediaNav li a i
+{
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.nav #socialMediaNav li a i:hover
+{
+  transition: 0.5s;
+  color: #800000;
 }
 
 .content
