@@ -1,0 +1,41 @@
+*
+{
+  padding: 0;
+  margin: 0;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+    font-size: 0px;
+}
+
+.nav
+{
+  background-color: #800000;
+  height: 100%;
+  width: 10%;
+  display: inline-block;
+}
+
+.nav ul
+{
+  position: fixed;
+  padding-top: 200px;
+  margin-left: 50px;
+  list-style: none;
+}
+
+.nav ul li
+{
+  line-height: 50px;
+}
+
+.content
+{
+  height: 100%;
+  width: 90%;
+  background-color: grey;
+  display: inline-block;
+}
