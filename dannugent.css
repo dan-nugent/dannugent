@@ -145,6 +145,26 @@ html,body
   font-weight: lighter;
 }
 
+#tagcloud
+{
+
+  float:right;
+
+}
+
+#tagcloud ul
+{
+  margin-top: 500px;
+}
+
+#tagcloud ul li
+{
+  color: #800000;
+  text-decoration: none;
+  font-family: AmaticSC-Regular;
+  font-weight: bold;
+}
+
 .projects
 {
   height: 21%;
