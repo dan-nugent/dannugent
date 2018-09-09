@@ -10,52 +10,31 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/tagcloud.jquery.js"></script>
   </head>
   <body>
-    <script type="text/javascript">
-      var settings = {
-        height: 700,
-        width: 900,
-        radius: 200,
-        speed: 0.4,
-        slower: 0.5,
-        fontMultiplier: 40,
-        hoverStyle:
-        {
-          border: 'none',
-          color: '#800000'
-        },
-        mouseOutStyle:
-        {
-          border: '',
-          color: ''
-        }
-      };
-      $(document).ready(function(){
-      $('#tagcloud').tagoSphere(settings);
-      });
-    </script>
     <div class="nav">
       <ul id="mainNav">
         <li>
-          <a href="http://www.dannugent.me/"><i class="material-icons">home</i></a>
+          <a href="#landing"><i class="material-icons">home</i></a>
         </li>
         <li>
-          <a href="#aboutNav"><i class="material-icons">person</i></a>
+          <a href="#sectionOne"><i class="material-icons">person</i></a>
         </li>
         <li>
-          <a href="#skillsNav"><i class="material-icons">school</i></a>
+          <a href="#sectionTwo"><i class="material-icons">school</i></a>
         </li>
         <li>
-          <a href="#projectsNav"><i class="material-icons">work</i></a>
+          <a href="#sectionThree"><i class="material-icons">work</i></a>
         </li>
         <li>
-          <a href="#contactNav"><i class="material-icons">email</i></a>
+          <a href="#sectionFour"><i class="material-icons">email</i></a>
         </li>
       </ul>
     </div>
     <div class="content">
+        <a id="landing"></a>
       <div class="home">
         <ul id="socialMediaNav">
           <li>
@@ -71,10 +50,12 @@
         <h1>DANIEL NUGENT</h1>
       </div>
       <div class="about">
-        <h1 id="aboutNav">ABOUT ME</h1>
+        <a id="sectionOne"></a>
+        <h1>ABOUT ME</h1>
       </div>
       <div class="skills">
-        <h1 id="skillsNav">SKILLS & EXPERIENCE</h1>
+        <a id="sectionTwo"></a>
+        <h1>SKILLS & EXPERIENCE</h1>
         <div id="tagcloud">
           <ul>
             <li>HTML</li>
@@ -95,10 +76,12 @@
         </div>
       </div>
       <div class="projects">
-        <h1 id="projectsNav">PROJECTS</h1>
+        <a id="sectionThree"></a>
+        <h1>PROJECTS</h1>
       </div>
       <div class="contact">
-        <h1 id="contactNav">CONTACT ME</h1>
+        <a id="sectionFour"></a>
+        <h1>CONTACT ME</h1>
         <div class="formContainer">
           <form>
               <input type="text" id="fname" name="firstname" placeholder="First name">
@@ -113,6 +96,47 @@
       <footer>
 
       </footer>
-    </div>
+      </div>
+      <script type="text/javascript">
+        var settings = {
+          height: 700,
+          width: 900,
+          radius: 200,
+          speed: 0.4,
+          slower: 0.5,
+          fontMultiplier: 40,
+          hoverStyle:
+          {
+            border: 'none',
+            color: '#800000'
+          },
+          mouseOutStyle:
+          {
+            border: '',
+            color: ''
+          }
+        };
+        $(document).ready(function(){
+        $('#tagcloud').tagoSphere(settings);
+        });
+      </script>
+      <script>
+        $(document).ready(function()
+        {
+          $("a").on('click', function(event){
+            if (this.hash !== "")
+            {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function()
+              {
+                window.location.hash = hash;
+              });
+            }
+      });
+    });
+    </script>
   </body>
 </html>
