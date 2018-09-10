@@ -60,7 +60,10 @@
           achieving grade 8 in the process. In the future I am aiming to achieve a diploma in piano and to learn how to play the
           cello.
         </p>
-        <img id="s1" src="assets/slider1.JPG"/>
+        <div class="aboutSlidesContainer">
+          <img class="aboutSlides" src="assets/slider1.JPG"/>
+          <img class="aboutSlides" src="assets/slider2.png"/>
+        </div>
       </div>
       <div class="skills">
         <a id="sectionTwo"></a>
@@ -106,6 +109,26 @@
 
       </footer>
       </div>
+      <script type="text/javascript">
+        var slideIndex = 0;
+        carousel();
+        function carousel()
+        {
+          var i;
+          var x = document.getElementsByClassName("aboutSlides");
+          for (i = 0; i < x.length; i++)
+          {
+            x[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > x.length)
+          {
+            slideIndex = 1
+          }
+          x[slideIndex-1].style.display = "block";
+          setTimeout(carousel, 3000);
+        }
+      </script>
       <script type="text/javascript">
         var settings = {
           height: 700,

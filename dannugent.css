@@ -138,21 +138,30 @@ html,body
   font-size: 25px;
   font-family: Oswald-Regular;
   color: #800000;
-  width: 60%;
+  width: 55%;
   margin-left: 75px;
   margin-top: 75px;
   line-height: 50px;
   display: inline-block;
+  vertical-align: top;
 }
 
-#s1
+.aboutSlidesContainer
 {
-  height: 500px;
-  width: 500px;
+  height: 550px;
+  width: 550px;
+  margin-top: 125px;
+  margin-left: 100px;
+  display: inline-block;
+  position:relative;
+  border: 10px solid black;
+}
+
+.aboutSlides
+{
+  width:100%;
+  height:100%;
   position: absolute;
-  margin-top: 150px;
-  margin-left: 75px;
-  border-radius: 50%;
 }
 
 .skills
