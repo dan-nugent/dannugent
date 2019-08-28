@@ -52,18 +52,6 @@
       <div class="about">
         <a id="sectionOne"></a>
         <h1>ABOUT ME</h1>
-        <p>
-          Hi, I'm Dan. I'm originally from Peterborough (UK) and currently live in Nottingham whilst pursuing an MSci Degree in
-          Computer Science at the University of Nottingham (Currently in 3rd year). My main interests within the field of Computer
-          Science are; Optimal software applications for real-world problems, Object oriented design, and full stack development.
-          Aside from Computer Science I enjoy gaming online with friends, travelling (recently went to south-east Asia & Australia!), scuba diving and music. I have played piano for over 10 years,
-          achieving grade 8 in the process. In the future I am aiming to achieve a diploma in piano and to learn how to play the
-          cello.
-        </p>
-        <div class="aboutSlidesContainer">
-          <img class="aboutSlides" src="assets/slider1.JPG"/>
-          <img class="aboutSlides" src="assets/slider2.png"/>
-        </div>
       </div>
       <div class="skills">
         <a id="sectionTwo"></a>
@@ -109,26 +97,6 @@
 
       </footer>
       </div>
-      <script type="text/javascript">
-        var slideIndex = 0;
-        carousel();
-        function carousel()
-        {
-          var i;
-          var x = document.getElementsByClassName("aboutSlides");
-          for (i = 0; i < x.length; i++)
-          {
-            x[i].style.display = "none";
-          }
-          slideIndex++;
-          if (slideIndex > x.length)
-          {
-            slideIndex = 1
-          }
-          x[slideIndex-1].style.display = "block";
-          setTimeout(carousel, 3000);
-        }
-      </script>
       <script type="text/javascript">
         var settings = {
           height: 700,
